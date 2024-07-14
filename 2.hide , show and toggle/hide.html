@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> hide </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style> 
+    .navbar{
+        background-color: purple;
+        height: 200px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+        align-items: center;
+    }
+
+    </style>
+
+        <script>
+            $(document).ready(function(){
+                $('.btn').click(function(){
+                    $('.navbar').hide(1000);
+                })
+            })
+        </script>
+
+</head>
+<body>
+    <div class="navbar">  haider  </div>
+    <br> <br> 
+   
+    <button class="btn"> click me to hide </button>
+</body>
+</html>

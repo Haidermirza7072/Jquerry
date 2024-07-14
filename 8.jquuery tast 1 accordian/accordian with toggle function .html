@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  show </title>
+    <!-- bootstarp -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- jqueey -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- javascript -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+    <style> 
+    .MAIN{
+        border: 10px solid rgb(227, 163, 85);
+        width: 50%;
+    }
+    .navbar2{
+        background-color: bisque;
+        /* height: 100px; */
+        width: 100%;
+        display: flex;
+        font-size: 40px; 
+        /* position: absolute;
+        top: 140px;    */
+        display: none;
+    }
+    .btn2{
+        position: relative;
+        width: 100%;
+        height: 100px;
+    }
+
+    .navbar3{
+        background-color: bisque;
+        /* height: 100px; */
+        width: 100%;
+        display: flex;
+        font-size: 40px; 
+        /* position: absolute;
+        top: 140px;    */
+        display: none;
+    }
+    .btn3{
+        position: relative;
+        width: 100%;
+        height: 100px;
+    }
+
+    .navbar4{
+        background-color: bisque;
+        /* height: 100px; */
+        width: 100%;
+        display: flex;
+        font-size: 40px; 
+        /* position: absolute;
+        top: 140px;    */
+        display: none;
+    }
+    .btn4{
+        position: relative;
+        width: 100%;
+        height: 100px;
+    }
+   
+
+    </style>
+
+        <script>
+            $(document).ready(function(){
+                $('.btn2').click(function(){
+                    $('.navbar2').slideToggle(1000);
+                })
+                $('.btn3').click(function(){
+                    $('.navbar3').slideToggle(1000);
+                })
+                $('.btn4').click(function(){
+                    $('.navbar4').slideToggle(1000);
+                })
+            })
+        </script>
+
+</head>
+<body>
+<div class="MAIN">
+    <button class="btn2"> click me to show </button>
+    <div class="navbar2">  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio harum sunt saepe nostrum! Doloribus quaerat fuga quibusdam, odit perferendis optio! </div>
+</div>
+
+<div class="MAIN">
+    <button class="btn3"> click me to show </button>
+    <div class="navbar3">  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio harum sunt saepe nostrum! Doloribus quaerat fuga quibusdam, odit perferendis optio! </div>
+</div>
+
+<div class="MAIN">
+    <button class="btn4"> click me to show </button>
+    <div class="navbar4">  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio harum sunt saepe nostrum! Doloribus quaerat fuga quibusdam, odit perferendis optio! </div>
+</div>
+   
+
+
+   
+</body>
+
+</html>

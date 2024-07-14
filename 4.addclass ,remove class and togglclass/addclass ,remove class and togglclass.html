@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> mouseover , mouseout ,doubleclick and css </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+     
+            $(document).ready(function(){
+                // addclass
+                $('.add').click(function(){
+                    $('div').addClass('demo');
+                })
+
+                // removeclass
+                $('.remove').click(function(){
+                    $('p').removeClass('one');
+                })
+
+                // toggle class
+                $('.toggle').click(function(){
+                    $('div').toggleClass('demo');
+                })
+
+            })
+    </script>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            background-color: black;
+            margin: 200px;
+        }
+        .demo{
+            height: 300px;
+            width: 300px;
+            background-color: cyan;
+            margin: 50px;
+        }
+        .one{
+            border: 10px solid red;
+            padding: 20px;
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <div> </div>
+
+    <br>
+    <button class="add"> add class</button>
+    <p class="one"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, optio quos rerum nesciunt totam magnam a quia iste eligendi. Aspernatur explicabo facilis distinctio hic eaque. Pariatur mollitia quo deserunt quasi earum perspiciatis. Neque repudiandae nemo exercitationem est perspiciatis dolores, accusamus modi distinctio possimus minus consequuntur ea nulla. Quo voluptatem earum nulla quidem corporis temporibus non?\ </p>
+   
+    <br> 
+    <button class="remove"> remove class </button>
+    <button class="toggle"> toggle </button>
+   
+</body>
+</html>
